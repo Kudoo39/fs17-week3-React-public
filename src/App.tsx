@@ -1,8 +1,10 @@
-import React from 'react'
+import Breweries from './components/Breweries'
 
 const App = () => {
   return (
-    <div>App</div>
+    <>
+      <Breweries />
+    </>
   )
 }
 
