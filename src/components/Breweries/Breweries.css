@@ -1,0 +1,36 @@
+.breweries__container {
+  padding: 100px 10px 40px 10px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.breweries__container__brewery {
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.breweries__container__brewery-property {
+  font-weight: bold;
+}
+
+.breweries__container__brewery button {
+  background-color: #ca8a04;
+  color: #fff;
+  border: none;
+  padding: 10px 10px;
+  margin: 10px 0 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.breweries__container__brewery button:hover {
+  background-color: #b77920;
+}
+
+.breweries__container__brewery button span {
+  font-weight: bold;
+}

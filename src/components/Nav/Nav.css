@@ -1,0 +1,43 @@
+.navigation {
+  height: 60px;
+  width: 100%;
+  background: #ca8a04;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navigation__logo {
+  background: url('/src/images/logo.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 100px;
+}
+
+.navigation__logo:hover {
+  transform: scale(1.05);
+}
+
+.navigation__nav {
+  display: flex;
+  width: 30%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navigation__nav__link {
+  text-decoration: none;
+}
+
+.navigation__nav div {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+}
+
+.navigation__nav div:hover {
+  transform: scale(1.05);
+}
