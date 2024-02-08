@@ -1,9 +1,9 @@
-import Breweries from './components/Breweries'
+import Home from './pages/Home'
 
 const App = () => {
   return (
     <>
-      <Breweries />
+      <Home />
     </>
   )
 }
