@@ -19,6 +19,8 @@ const Breweries = () => {
     return <h2>Loading...</h2>
   }
 
+  const newData = data.filter((brewery) => brewery.name.toLowerCase().includes(searchValue.toLowerCase()))
+
   return (
     <>
       <TextField
@@ -63,45 +65,41 @@ const Breweries = () => {
           }
         }}
       />
-      <div className="breweries__container">
-        {data.map((data) => {
-          console.log(data)
-          return (
-            <div key={data.id} className="breweries__container__brewery">
+      {newData.length === 0 ? (
+        <h2 style={{ padding: '40px' }}>No breweries can be found!!</h2>
+      ) : (
+        <div className="breweries__container">
+          {newData.map((brewery) => (
+            <div key={brewery.id} className="breweries__container__brewery">
               <div>
                 <span className="breweries__container__brewery-property">Name: </span>
-                {data.name}
+                {brewery.name}
               </div>
               <div>
                 <span className="breweries__container__brewery-property">Type: </span>
-                {data.brewery_type}
+                {brewery.brewery_type}
               </div>
               <div>
                 <span className="breweries__container__brewery-property">Address: </span>
-                {data.address_1}
+                {brewery.address_1}
               </div>
               <div>
                 <span className="breweries__container__brewery-property">Phone: </span>
-                {data.phone}
+                {brewery.phone}
               </div>
               <div>
-                <span
-                  className="
-              "
-                >
-                  Website:
-                </span>
-                {data.website_url}
+                <span className="breweries__container__brewery-property">Website: </span>
+                {brewery.website_url}
               </div>
-              <Link to={`/breweries/${data.id}`}>
+              <Link to={`/breweries/${brewery.id}`}>
                 <button>
                   <span>Detail</span>
                 </button>
               </Link>
             </div>
-          )
-        })}
-      </div>
+          ))}
+        </div>
+      )}
     </>
   )
 }
