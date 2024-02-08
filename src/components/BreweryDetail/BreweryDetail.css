@@ -1,5 +1,44 @@
 .brewery__container {
-  height: 500px;
-  width: 100%;
-  background: yellow;
+  margin: 20px;
+  padding: 20px;
+  padding-bottom: 50px;
+  border: 3px solid #000;
+  border-radius: 5px;
+  background-color: #dcb73d;
+  display: flex;
+  justify-content: space-between;
+}
+
+.brewery__container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.brewery__container p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.brewery__container__text {
+  font-weight: bold;
+}
+
+.brewery__container a {
+  color: blue;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.brewery__container a:hover {
+  color: grey;
+}
+
+.brewery__container__icon {
+  font-size: 60px !important;
+  cursor: pointer;
+  color: black;
+}
+
+.brewery__container__icon:hover {
+  font-size: 65px !important;
 }

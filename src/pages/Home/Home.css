@@ -1,5 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
 .home__container {
-  height: 600px;
+  background: url('/src/images/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
+  min-height: 500px;
   padding-top: 60px;
+
+  text-align: center;
+  font-weight: normal;
+  color: black;
+  font-family: 'Protest Riot', sans-serif;
+}
+
+.home__container__title {
+  font-size: 50px;
+}
+
+.home__container__text {
+  font-size: 40px;
+  margin-top: 20px;
 }
