@@ -1,22 +1,23 @@
 # Breweries App
 
-Fetch, display, and search for brewery companies from the given API endpoint, using React and TypeScript
+The Breweries App is a web application built with TypeScript and React that allows users to browse a list of breweries fetched from the Open Brewery DB API.
 
-## Requirements
+![Breweries App Screenshot](src/images/demo.png)
 
-1. Check the documentation at [https://www.openbrewerydb.org/documentation](https://www.openbrewerydb.org/documentation) Fetch and display information of all the companies.
+## Features
 
-2. Have proper display and routing that user can switch to/back from specific company's detailed page
+- Browse a comprehensive list of breweries sourced from the Open Brewery DB API.
+- View information about each brewery, such as name, type, city, state, and country.
+- Click on a brewery to see detailed information on a separate page.
+- User-friendly interface designed for smooth navigation and seamless browsing.
 
-3. Create search component to enable user to input text and search for companies by name.
+## Demo
 
-4. Use MaterialUI to make your design more appealing and responsive
+- Check out the [Live Demo](https://fs-breweries-app.netlify.app/) to experience the Breweries App in action.
 
-5. Deploy your application and rewrite README file
+## Technologies Used
 
-## Optional
-
-6. Implement performance optimization where applicable
-7. Use the queries listed in the documentation to sort and limit the returned data and build pagination feature.
-
-8. Create a contact form so that user can send question along with their contact information.
+- TypeScript
+- React
+- CSS
+- Material UI
