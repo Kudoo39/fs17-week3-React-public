@@ -5,9 +5,11 @@ import './Nav.css'
 const Nav = () => {
   return (
     <div className="navigation">
-      <div className="navigation__logo"></div>
+      <a href="https://www.openbrewerydb.org/documentation" target="_blank" rel="noreferrer">
+        <div className="navigation__logo"></div>
+      </a>
 
-      <div className="navigation__nav">
+      <div className={`navigation__nav`}>
         <Link to="/" className="navigation__nav__link">
           <div>Home</div>
         </Link>
