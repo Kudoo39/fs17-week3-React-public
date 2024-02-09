@@ -1,4 +1,9 @@
 .brewery__container {
+  background: url('/src/images/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
   margin: 20px;
   padding: 20px;
   padding-bottom: 50px;

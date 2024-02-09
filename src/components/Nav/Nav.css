@@ -1,10 +1,11 @@
 .navigation {
   height: 60px;
   width: 100%;
-  background: #ca8a04;
+  background: white;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  border-bottom: 1px solid black;
 }
 
 .navigation__logo {

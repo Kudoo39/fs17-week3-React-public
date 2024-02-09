@@ -5,6 +5,7 @@ import useFetch from '../../hooks/useFetch'
 import './BreweryDetail.css'
 import Box from '@mui/material/Box/Box'
 import ReplyIcon from '@mui/icons-material/Reply'
+import CircularProgress from '@mui/material/CircularProgress/CircularProgress'
 
 const BreweryDetail = () => {
   const url = 'https://api.openbrewerydb.org/v1/breweries'
@@ -15,7 +16,7 @@ const BreweryDetail = () => {
   const brewery: BreweryDetailType | undefined = data.find((brewery) => brewery.id === id)
 
   if (loading) {
-    return <h2>Loading...</h2>
+    return <CircularProgress />
   }
 
   return (

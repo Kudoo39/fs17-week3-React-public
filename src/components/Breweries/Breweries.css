@@ -1,8 +1,22 @@
+.breweries__title {
+  text-align: center;
+  font-weight: normal;
+  color: black;
+  font-family: 'Protest Riot', sans-serif;
+  font-size: 40px;
+  background: url('/src/images/background.png');
+  padding: 40px 10px;
+}
+
 .breweries__container {
-  padding: 40px 10px 40px 10px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
+  background: url('/src/images/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0px 10px 40px 10px;
 }
 
 .breweries__container__brewery {
