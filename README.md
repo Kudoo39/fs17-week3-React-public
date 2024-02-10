@@ -8,6 +8,7 @@ The Breweries App is a web application built with TypeScript and React that allo
 
 - Browse a comprehensive list of breweries sourced from the Open Brewery DB API.
 - View information about each brewery, such as name, type, city, state, and country.
+- Sort data based on brewery type.
 - Click on a brewery to see detailed information on a separate page.
 - User-friendly interface designed for smooth navigation and seamless browsing.
 

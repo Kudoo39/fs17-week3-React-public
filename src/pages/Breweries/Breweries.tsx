@@ -5,23 +5,34 @@ import useFetch from '../../hooks/useFetch'
 import { Brewery } from '../../misc/type'
 import CircularProgress from '@mui/material/CircularProgress/CircularProgress'
 import Search from '../../components/Search/Search'
+import Sort from '../../components/Sort/Sort'
 import './Breweries.css'
 
 const Breweries = () => {
   const url = 'https://api.openbrewerydb.org/v1/breweries'
 
+  const [selectedType, setSelectedType] = useState('')
   const [searchValue, setSearchValue] = useState('')
   const { data, loading } = useFetch<Brewery>(url)
+
+  const handleTypeChange = (type: string) => {
+    setSelectedType(type)
+  }
 
   if (loading) {
     return <CircularProgress />
   }
 
-  const newData = data.filter((brewery) => brewery.name.toLowerCase().includes(searchValue.toLowerCase()))
+  let newData = data.filter((brewery) => brewery.name.toLowerCase().includes(searchValue.toLowerCase()))
+
+  if (selectedType !== '') {
+    newData = newData.filter((brewery) => brewery.brewery_type === selectedType)
+  }
 
   return (
     <>
       <Search searchValue={searchValue} setSearchValue={setSearchValue} />
+      <Sort onSelectType={handleTypeChange} />
       <div className="breweries__title">List of breweries</div>
       {newData.length === 0 ? (
         <h2 style={{ padding: '40px' }}>No breweries can be found!!</h2>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
 .breweries__title {
   text-align: center;
   font-weight: normal;
@@ -21,6 +23,7 @@
 
 .breweries__container__brewery {
   border: 1px solid black;
+  max-width: 250px;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -48,4 +51,30 @@
 
 .breweries__container__brewery button span {
   font-weight: bold;
+}
+
+@media screen and (max-width: 1470px) {
+  .breweries__container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .breweries__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .breweries__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .breweries__container {
+    grid-template-columns: 1fr;
+  }
 }
