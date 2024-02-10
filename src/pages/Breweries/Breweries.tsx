@@ -1,13 +1,10 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-import CloseIcon from '@mui/icons-material/Close'
-import SearchIcon from '@mui/icons-material/Search'
-import InputAdornment from '@mui/material/InputAdornment'
-import TextField from '@mui/material/TextField'
 import useFetch from '../../hooks/useFetch'
 import { Brewery } from '../../misc/type'
 import CircularProgress from '@mui/material/CircularProgress/CircularProgress'
+import Search from '../../components/Search/Search'
 import './Breweries.css'
 
 const Breweries = () => {
@@ -24,48 +21,7 @@ const Breweries = () => {
 
   return (
     <>
-      <TextField
-        label="Search..."
-        type="text"
-        size="small"
-        value={searchValue}
-        onChange={(e) => setSearchValue(e.target.value)}
-        InputProps={{
-          startAdornment: (
-            <InputAdornment position="start">
-              <SearchIcon sx={{ color: 'black' }} />
-            </InputAdornment>
-          ),
-          endAdornment: (
-            <InputAdornment position="end">
-              <CloseIcon
-                onClick={() => setSearchValue('')}
-                fontSize="small"
-                sx={{ color: 'black', cursor: 'pointer', display: searchValue.length <= 0 ? 'none' : 'block' }}
-              />
-            </InputAdornment>
-          )
-        }}
-        sx={{
-          'position': 'absolute',
-          'right': '10px',
-          'top': '10px',
-          '& label': { color: 'black' },
-          '& input': { color: 'black' },
-          '& label.Mui-focused': { color: 'black' },
-          '& .MuiOutlinedInput-root': {
-            '& fieldset': {
-              borderColor: 'black'
-            },
-            '&:hover fieldset': {
-              borderColor: 'black'
-            },
-            '&.Mui-focused fieldset': {
-              borderColor: 'black'
-            }
-          }
-        }}
-      />
+      <Search searchValue={searchValue} setSearchValue={setSearchValue} />
       <div className="breweries__title">List of breweries</div>
       {newData.length === 0 ? (
         <h2 style={{ padding: '40px' }}>No breweries can be found!!</h2>

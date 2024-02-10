@@ -13,4 +13,18 @@
 
 .footer__container__title {
   font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.footer__container__credit {
+  margin-bottom: 10px;
+}
+
+.footer__container__credit a {
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer__container__credit a:hover {
+  color: gold;
 }

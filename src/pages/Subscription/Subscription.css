@@ -1,0 +1,76 @@
+.super__form__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background: url('/src/images/paper.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__title {
+  text-align: center;
+  font-weight: normal;
+  color: black;
+  font-family: 'Protest Riot', sans-serif;
+  font-size: 40px;
+  padding: 40px 10px 20px 10px;
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  background: url('/src/images/paper.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 50px;
+  border: 3px solid black;
+  border-radius: 20px;
+  margin: 20px 0;
+  width: 400px;
+}
+
+.form__label {
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+.form__input {
+  border: none;
+  border-bottom: 1px solid black;
+  padding-bottom: 0.25rem;
+  outline: none;
+  background-color: inherit;
+  font-weight: 550;
+}
+
+.form__input:-webkit-autofill {
+  -webkit-background-clip: text !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.form__button {
+  cursor: pointer;
+  align-self: flex-end;
+  font-size: 1rem;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.form__button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.form__button span {
+  font-weight: bold;
+}
+
+.form__error {
+  max-width: 100%;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: red;
+}
