@@ -2,10 +2,10 @@ import { Link, useParams } from 'react-router-dom'
 
 import { BreweryDetailType } from '../../misc/type'
 import useFetch from '../../hooks/useFetch'
-import './BreweryDetail.css'
 import Box from '@mui/material/Box/Box'
 import ReplyIcon from '@mui/icons-material/Reply'
 import CircularProgress from '@mui/material/CircularProgress/CircularProgress'
+import './BreweryDetail.css'
 
 const BreweryDetail = () => {
   const url = 'https://api.openbrewerydb.org/v1/breweries'

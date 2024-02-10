@@ -16,6 +16,9 @@ const Nav = () => {
         <Link to="/breweries" className="navigation__nav__link">
           <div>List of Breweries</div>
         </Link>
+        <Link to="/subscription" className="navigation__nav__link">
+          <div>Subscription</div>
+        </Link>
       </div>
     </div>
   )
