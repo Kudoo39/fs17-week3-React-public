@@ -1,3 +1,4 @@
+import { memo } from 'react'
 import './Home.css'
 
 const Home = () => {
@@ -9,4 +10,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default memo(Home)

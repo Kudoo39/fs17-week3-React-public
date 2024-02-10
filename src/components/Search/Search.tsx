@@ -1,3 +1,5 @@
+import { memo } from 'react'
+
 import CloseIcon from '@mui/icons-material/Close'
 import SearchIcon from '@mui/icons-material/Search'
 import InputAdornment from '@mui/material/InputAdornment'
@@ -56,4 +58,4 @@ const Search = ({ searchValue, setSearchValue }: any) => {
   )
 }
 
-export default Search
+export default memo(Search)

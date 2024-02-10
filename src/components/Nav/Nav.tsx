@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { memo } from 'react'
 
 import './Nav.css'
 
@@ -24,4 +25,4 @@ const Nav = () => {
   )
 }
 
-export default Nav
+export default memo(Nav)

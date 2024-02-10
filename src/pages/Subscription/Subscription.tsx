@@ -1,5 +1,7 @@
+import { memo } from 'react'
 import { useFormik } from 'formik'
 import * as Yup from 'yup'
+
 import './Subscription.css'
 
 const Subscription = () => {
@@ -72,7 +74,7 @@ const Subscription = () => {
           Password
         </label>
         <input
-          type="text"
+          type="password"
           id="password"
           name="password"
           value={formik.values.password}
@@ -87,7 +89,7 @@ const Subscription = () => {
           Confirmed password
         </label>
         <input
-          type="text"
+          type="password"
           id="confirmedPassword"
           name="confirmedPassword"
           value={formik.values.confirmedPassword}
@@ -121,4 +123,4 @@ const Subscription = () => {
   )
 }
 
-export default Subscription
+export default memo(Subscription)

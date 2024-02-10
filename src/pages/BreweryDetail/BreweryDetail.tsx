@@ -1,3 +1,4 @@
+import { memo } from 'react'
 import { Link, useParams } from 'react-router-dom'
 
 import { BreweryDetailType } from '../../misc/type'
@@ -53,4 +54,4 @@ const BreweryDetail = () => {
   )
 }
 
-export default BreweryDetail
+export default memo(BreweryDetail)
